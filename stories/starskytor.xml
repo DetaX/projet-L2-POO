@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<paragraph id="1">
+  <class type="Aucun" skill="0" stamina="0" luck="0" armor="0"/>
+  <text> Bienvenue dans starskytor, le super jeu dont vous êtes le héros.
+  Vous vous révéillez dans la salle 26, les autres élèves sont déjà parti. Vous allez devoir affronter le prof en duel sans pitié.</text>
+  <choice id="2">Devenir crawek, un personnage négligent, brave, courageux, et flemmard mais persévérant.</choice>
+  <choice id="3">Devenir jasuho le voodoo africain, qui détient toute la connaissance et la sagesse.</choice>
+  <choice id="4">Devenir quelqu'un d'ordinaire, moyen partout.</choice>
+</paragraph>
+
+
+<paragraph id="2">
+  <class type="crawek" skill="2" stamina="7" luck="1" armor="0"/>
+  <text>Vous êtes désormais crawek, et votre objectif lors de cette aventure est de valider votre année. Votre arme de départ est une mitraillette et votre armure un sweat jaune.
+	(attention, n'oubliez pas de les équiper avant de partir au combat à travers le menu )</text>
+  <inventory>
+	<equipable name="mitraillette" power="1" type="1"/>
+	<equipable name="sweat" power="1" type="2"/>
+  </inventory>
+	<choice id="5">Engager le duel</choice>
+</paragraph>
+
+<paragraph id="3">
+  <class type="jasuho" skill="7" stamina="2" luck="1" armor="0" />
+  <text>Vous êtes désormais Jasuho, et votre objectif lors de cette aventure est d'être number one partout. Votre arme de départ est un gros livre et votre armure une amulette du savoir.
+  (attention, n'oubliez pas de les équiper avant de partir au combat à travers le menu )</text>
+  <inventory>
+  	<equipable name="gros livre" power="1" type="1"/>
+	<equipable name="amulette du savoir" power="1" type="2"/>
+	</inventory>
+  <choice id="5">Engager le duel</choice>
+</paragraph>
+
+<paragraph id="4">
+  <class type="standard" skill="4" stamina="4" luck="8" armor="0" />
+  <text>Vous êtes désormais un homme ordinaire, et votre objectif lors de cette aventure est de sortir de la banalité de votre quotidien. Votre arme de départ est une épée et votre armure un couvercle de poubelle.
+  (attention, n'oubliez pas de les équiper avant de partir au combat à travers le menu )</text>
+  <inventory>
+    	<equipable name="épée" power="1" type="1"/>
+	<equipable name="couvercle de poubelle" power="1" type="2"/>
+	</inventory>
+  <choice id="5">Engager le duel</choice>
+</paragraph>
+
+<paragraph id="5">
+  <inventory>
+  <consumable name="petite potion de vie" effect="health" value="20" />
+  </inventory>
+  <text>Vous tentez de vous expliquer mais votre ennemi vous répond par "200% dut iut", ce qui n'a aucun sens. Vous êtes alors dans l'obligation d'engager le combat</text>
+  <fight name="iriachou" skill="2" health="200" armor="1" >
+    <inventory> 
+	  <equipable name="Super sabre laser fabriqué en CASL d'exception" power="2" type="1" />
+      <consumable name="Grosse potion de vie" effect="health" value="50" />
+      <consumable name="potion de chance" effect="luck" value="10" />
+  </inventory>
+  </fight>
+  <choice id="6">Sortir de la salle</choice>
+</paragraph>
+
+
+<paragraph id="6">
+  <text>Vous sortez triomphant de ce redoutable adversaire, et décidez de la suite de votre journée.</text>
+  <choice id="7">Aller à l'administration parce que vous n'êtes pas content</choice>
+  <choice id="8">Se rendre au cours suivant en tant qu'élève modèle</choice>
+  <choice id="9">Rentrer chez vous pour un repos bien mérité</choice>
+</paragraph>
+
+<paragraph id="7">
+  <inventory>
+    <consumable name="potion de chance" effect="luck" value="10" />
+  </inventory>
+  <text>Voter passage à l'administration se déroule bien et vous rapporte une potion de chance. Sur le chemin de votre retour, vous croisez le redoutable Rifaq, qui vous demande si vous avez pris un abonnement pour redoubler pendant 25 ans.
+Vous rentrez donc chez vous afin de vous morfondre sur votre sort.</text>
+<choice id="10">Rentrer chez vous </choice>
+</paragraph>
+
+<paragraph id="8">
+<inventory>
+<consumable name="champignon étrange" effect="health" value="2000" />
+</inventory>
+<text>Le cours suivant se déroule bien jusqu'à ce que le redoutable Rifaq débarque dans la salle afin de vous dire que votre dernier contrôle était certes très rempli mais également totalement faux, ce qui est un exploit pour une copie de 25 pages.
+Votre voisin de classe bienveillant, un certain Mike champi, vous offre un champignon étrange pour vous donner du courage et vous dis qu'il est excellent malgrès certains hypothétiques effets secondaires.</text>
+<choice id="10">Rentrer chez vous</choice>
+</paragraph>
+
+<paragraph id="9">
+<text>Une fois rentré chez vous, vous consultez vos mails et constatez avec effroi que le redoutable Rifaq vous a contacté. Le contenu du mail parle de votre abscence répétée à ses cours : "on ne devient pas médecin sans jamais avoir mis les pieds dans un hôpital, on ne devient pas dentiste pour chevaux sans jamais avoir été dentiste pour chevaux, on devient pas avocat sans jamais avoir été dans un tribunal." </text>
+<choice id="10">Se morfondre </choice>
+</paragraph>
+
+<paragraph id="10">
+<text>Vous êtes triste, et vous cherchez un moyen de vous remonter le moral : </text>
+<choice id="11">Repartir à la fac pour assister au cours de Eaucine</choice>
+<choice id="12">Aller au Mcdo</choice>
+</paragraph>
+
+<paragraph id="11">
+<text>Durant le cours, Eaucine s'approche de vous pour voir ce que vous faîtes et demande si votre exercice est efficace. Devant votre abscence de réponse, il engage le combat.</text>
+<fight name="Eaucine" skill="3" health="150" armor="2" >
+    <inventory> 
+      <consumable name="Bolognaise" effect="health" value="60" />
+	  <consumable name="Potion de stamina" effect="stamina" value="2" />
+  </inventory>
+</fight>
+<choice id="14">Triomphant du grand Eaucine, vous décidez d'aller à la bibliothèque</choice>
+<choice id="18">Aller directement attendre le cours suivant</choice>
+</paragraph>
+
+<paragraph id="12">
+<text>Vous arrivez au Mcdo et commandez un maxiBestof 9mcNuggets, mais le vendeur ne vous en donne que 8, et vous dénonce en disant que vous en avez déjà mangé un. Le combat est engagé.</text>
+<fight name="nioug" skill="1" health="300" armor="3" >
+    <inventory> 
+      <equipable name="dent en or" power="2" type="2" />
+      <consumable name="mcNuggets" effect="health" value="90" />
+  </inventory>
+</fight>
+  <choice id="13">Vous dépêcher pour tenter d'arriver à l'heure au cours de Eaucine</choice>
+  <choice id="14">rentrer tranquillement pour aller à la bibliothèque</choice>
+</paragraph>
+
+<paragraph id="13">
+<text>Vous arrivez malheureusement trop tard, deux choix s'offrent alors à vous : </text>
+<choice id="14">Aller à la biblihotèque</choice>
+<choice id="16">Aller attendre le cours suivant</choice>
+</paragraph>
+
+<paragraph id="14">
+<inventory>
+  <consumable name="potion de compétence" effect="skill" value="2" />
+</inventory>
+<text>Arrivé à la bibliothèque, vous décidez de vous entraîner durement, et obtenez ainsi une potion de compétence.</text>
+<choice id="15">Continuer de vous entraîner</choice>
+<choice id="16">Aller attendre le cours suivant</choice>
+</paragraph>
+
+<paragraph id="15">
+<text>Vous vous êtes endormi, et devez combattre le démon des poneys afin de vous réveiller</text>
+<fight name="Demon poney" skill="3" health="150" armor="2" ><inventory></inventory></fight>
+<choice id="17">Vous réveiller</choice>
+</paragraph>
+
+
+<paragraph id="16">
+<text>Vous avez suffisamment de temps pour prendre un goûter</text>
+<choice id="22">Prendre un jus d'orange</choice>
+<choice id="21">Prendre un coca</choice>
+<choice id="20">Prendre un mars</choice>
+</paragraph>
+
+<paragraph id="17">
+<text>Vous vous réveillez juste à temps pour aller assister au cours suivant, et vous n'avez pas d'autre choix étant donné son importance.</text>
+<choice id="18">Aller au cours suivant</choice>
+</paragraph>
+
+<paragraph id="18">
+<text>En chemin vous vous faîtes soudainement attaquer par un féroce poulet zombie explosif </text>
+<fight name="poulet" skill="5" health="70" armor="3" >
+    <inventory>
+      <consumable name="cuisse de poulet" effect="health" value="50" />
+  </inventory>
+</fight>
+<choice id="19">Se rendre au cours suivant</choice>
+</paragraph>
+
+<paragraph id="19">
+<text>Ceci est votre dernier cours avant de devoir aller affronter Rifak, et donc votre dernière occasion de vous préparer. </text>
+<choice id="23">Demander de l'aide à votre professeure, la fameuse iProf</choice>
+<choice id="26">Se concentrer</choice>
+<choice id="30">Aller affronter Rifak</choice>
+</paragraph>
+
+<paragraph id="20">
+    <inventory>
+      <consumable name="mars" effect="luck" value="10" />
+  </inventory>
+<text>Vous obtenez un mars, et ça repart</text>
+<choice id="19">Aller au cours</choice>
+</paragraph>
+
+<paragraph id="21">
+    <inventory>
+      <consumable name="coca" effect="stamina" value="2" />
+	  <consumable name="bounty" effect="health" value="40" />
+  </inventory>
+<text>Vous obtenez non seulement un coca, mais un également un bounty qui est tombé par hasard</text>
+<choice id="19">Aller au cours</choice>
+</paragraph>
+
+<paragraph id="22">
+    <inventory>
+      <consumable name="jus d'orange" effect="health" value="100" />
+  </inventory>
+<text>Vous obtenez donc un jus d'orange</text>
+<choice id="19"> Aller au cours</choice>
+</paragraph>
+
+<paragraph id="23">
+<text>Vous demandez de l'aide à iProf qui vous répond que de l'expérience vient la sagesse, vous allez donc devoir l'affronter afin d'être préparé au pire</text>
+<fight name="iProf" skill="4" health="500" armor="3" >
+    <inventory>
+      <consumable name="hyper potion" effect="health" value="200" />
+	  <consumable name="potion de compétence" effect="skill" value="3" />
+	  <equipable name="Super mac" power="8" type="1" />
+  </inventory>
+</fight>
+<choice id="24">Repartir à votre place</choice>
+</paragraph>
+
+
+<paragraph id="25">
+<text>Vous disposez désormais de l'arme ultime.</text>
+<choice id="26">Se concentrer</choice>
+<choice id="27">Aller affronter Rifak</choice>
+</paragraph>
+
+<paragraph id="26">
+<text>Vous essayez de vous concentrer, mais votre ennemi juré, Kong, ne veux pas vous laisser faire et engage un combat !</text>
+<fight name="Kong" skill="2" health="500" armor="6" ><inventory></inventory></fight>
+<choice id="27">Aller affronter Rifak</choice>
+</paragraph>
+
+<paragraph id="27">
+<text>Vous vous présentez donc devant Rifak, les autres élèves forment un cercle autour de vous pour vous empêcher de fuir.</text>
+<fight name="Rifak" skill="16" health="400" armor="4" >
+<inventory>
+	<consumable name = "hyper potion" effect="health" value="200"/>
+</inventory>
+</fight>
+<choice id="28">Vous avez mis Rifak à terre, et vous voulez maintenant l'achever</choice>
+<choice id="29">Vous voulez en profiter pour vous tenter de vous enfuir</choice>
+</paragraph>
+
+<paragraph id="28">
+  <text>Avant même que vous n'arriviez à sa hauteur, Rifak se relève et est désormais deux fois plus gros qu'avant</text>
+  <fight name="Rifak Gros" skill="16" health="800" armor="5"><inventory></inventory></fight>
+  <choice id="30">Triompher</choice>
+</paragraph>
+
+<paragraph id="29">
+  <text>Vous avez à peine fait deux pas que Rifak s'est relevé et arrive à vote hauteur, et il est désormais beaucoup plus puissant car il n'est pas content du tout</text>
+  <fight name="Rifak Puissant" skill="20" health="400" armor="5"><inventory></inventory></fight>
+  <choice id="30"> Triompher</choice>
+</paragraph>
+
+<paragraph id="30">
+  <text>Bravo, Vous avez vaincu les forces du mal et sauvé le monde !!! Vous êtes sorti de votre ordinaire, vous avez validé votre année et vous êtes number one partout !!!</text>
+</paragraph>
+
